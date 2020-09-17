@@ -14,7 +14,10 @@
     .inputs{
         font-size:large;
     }
-    
+    #row1{
+        border-collapse:separate;
+        border-spacing: 10px;
+    }
     .container{
       background-color: antiquewhite;
       height: 100%;
@@ -57,7 +60,7 @@
             <a class="nav-link active"  href="file:///Users/farhinchowdhury/Desktop/bootcamp/Homework/Farhin_Chowdhury_Portfolio/contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="file:///Users/farhinchowdhury/Desktop/bootcamp/Homework/Farhin_Chowdhury_Portfolio/portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="file:///Users/farhinchowdhury/Desktop/bootcamp/Homework/Farhin_Chowdhury_Portfolio/index.html">About Me</a>
@@ -71,28 +74,23 @@
       <div class = "col-lg-8">
         <h1>Contact</h1>
         <hr>
-        <div class= "inputs">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Name</span>
-                </div>
-                <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name:</label>
+              <input type="name" class="form-control" id="inputFullName" aria-describedby="enterFullName" placeholder="Full Name">
             </div>
-            
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Email</span>
-                </div>
-                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            
-            <div class="input-group mb-5">
-                <div class="input-group-prepend">
-                  <span class="input-group-text">Message</span>
-                </div>
-                    <textarea class="form-control" placeholder="Message" aria-label="Message"></textarea>
-          </div>
-        </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Adress">
+                <small id="emailHelp" class="form-text text-muted">I will never share your email with anyone else.</small>
+              </div>
+              <hr>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary mb-5">Submit</button>
+          </form>
 
       </div>
     </div>
