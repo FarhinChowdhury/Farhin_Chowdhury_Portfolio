@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+
+  <style>
+    body{
+    background-image: url("https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=951&q=80");
+    background-size: cover;
+    }
+    
+    .container{
+      background-color: antiquewhite;
+      height: 100%;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 100px;
+    }
+    .container h1 {
+      font-weight: bold;
+      color:  #ec69a6e7;
+      margin-top: 20px;
+      font-size: 300%;
+      
+    }
+    .navbar{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .navbar-brand{
+
+      color:antiquewhite;
+      padding:8px;
+      font-weight: bold;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+  </style>
+
+  <title>About Me</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg" style= "background-color: #f0bbd4e7">
+    <div class="navbar-brand"style= "background-color: #ec69a6e7">Farhin Chowdhury</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active"  href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Desktop\bootcamp\Homework\Farhin_Chowdhury_Portfolio\index.html">About Me</a>
+          </li>
+        </ul>
+
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class = "col-lg-8">
+        <h1>About Me</h1>
+        <hr>
+        <div class="media">
+          <img src="data:image/jpeg;base64,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" class="align-self-start mr-3"
+          ALIGN="left" alt="Picture of Farhin Chowdhury">
+          <div class="media-body">
+            <h5 class="mt-0">Top-aligned media</h5>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maxime libero aspernatur accusantium dolorum non, modi dicta ad voluptates assumenda sint magnam explicabo pariatur porro saepe dignissimos unde id recusandae.</p>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
